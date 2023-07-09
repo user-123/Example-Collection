@@ -2,6 +2,7 @@ package javaCollectionsFramework;
 
 //import java.util.*;
 import java.util.AbstractMap;
+import java.util.AbstractQueue;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,6 +34,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Vector;
 import java.util.WeakHashMap;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
@@ -61,12 +63,15 @@ public class MainTest {
 		Map<?, ?> mapImplByTreeMap = new TreeMap<>();
 		Map<?, ?> mapImplByEnumMap = new EnumMap<>(listOfEnum.class);
 		Map<?, ?> mapImplByWeakHashMap = new WeakHashMap<>();
+		//Queue.offer：如果隊列已滿，則返回false並且不會拋出異常；Queue.add：如果隊列已滿，則拋出異常
 		Queue<?> queueImplByLinkedList = new LinkedList<>();
 		Queue<?> queueImplByConcurrentLinkedQueue = new ConcurrentLinkedQueue<>();
 		Queue<?> queueImplByPriorityQueue = new PriorityQueue<>();
+		Queue<?> queueImplByArrayBlockingQueue = new ArrayBlockingQueue<>(0);
 		Queue<?> queueImplByArrayDeque = new ArrayDeque<>();
 		Deque<?> dequeImplByArrayDeque = new ArrayDeque<>();
 		Deque<?> dequeImplByLinkedList = new LinkedList<>();
+		AbstractQueue<?> abstractQueueImplByPriorityQueue = new PriorityQueue<>();
 		PriorityQueue<?> priorityQueueImplByPriorityQueue = new PriorityQueue<>();
 		Stack<?> stackImplByStack = new Stack<>();
 		Vector<?> vectorImplByStack = new Stack<>();
