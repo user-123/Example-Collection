@@ -26,7 +26,7 @@ class MinStack {
 		return head.min;
 	}
 
-	private class Node {
+	private class Node {	//實作一個Linked List
 		int val;
 		int min;
 		Node next;
