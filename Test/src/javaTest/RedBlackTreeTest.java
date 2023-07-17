@@ -1,4 +1,4 @@
-package redBlackTree;
+package javaTest;
 
 import java.util.Hashtable;
 import java.util.Map;
@@ -6,9 +6,9 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class Main {
+public class RedBlackTreeTest {
 
-	public Main() {}
+	public RedBlackTreeTest() {}
 
 	public static void main(String[] args) {
 		Set<String> rbTree1 = new TreeSet<>();

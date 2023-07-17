@@ -1,4 +1,4 @@
-package javaInheritance;
+package javaTest.inheritanceTest;
 
 public final class Main_Final {
 

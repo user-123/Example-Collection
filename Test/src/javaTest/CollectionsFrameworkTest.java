@@ -1,4 +1,4 @@
-package javaCollectionsFramework;
+package javaTest;
 
 //import java.util.*;
 import java.util.AbstractMap;
@@ -40,9 +40,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 enum listOfEnum {a, b, c, d};	//可以不加分號耶0.0
 
-public class MainTest {
+public class CollectionsFrameworkTest {
 
-	public MainTest() {}
+	public CollectionsFrameworkTest() {}
 
 	public static void main(String[] args) {
 		Collection<? extends Object> collection_ = new HashSet<>();

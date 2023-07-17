@@ -1,10 +1,10 @@
-package stringJoiner;
+package javaTest;
 
 import java.util.StringJoiner;
 
-public class Test {
+public class StringJoinerTest {
 
-	public Test() {}
+	public StringJoinerTest() {}
 
 	public static void main(String[] args) {
 		StringJoiner sj = new StringJoiner(null);

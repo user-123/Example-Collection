@@ -1,4 +1,4 @@
-package javaInheritance;
+package javaTest.inheritanceTest;
 
 public final class kid11 extends Kid01 {
 

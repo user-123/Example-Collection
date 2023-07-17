@@ -1,11 +1,11 @@
-package javaGeneric;
+package javaTest;
 
 import java.util.Set;
 
 //public class Main {
-public class Main<T extends Object> {
+public class GenericTest<T> {	//<T extends Object>
 
-	public Main() {}
+	public GenericTest() {}
 
 	public static void main(String[] args) {}
 

@@ -1,4 +1,4 @@
-package javaReference;
+package javaTest;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;
@@ -10,9 +10,9 @@ import java.util.WeakHashMap;
 import java.lang.ref.FinalReference;
 import java.lang.ref.Finalizer;
 
-public class Main {
+public class ReferenceTest {
 
-	public Main() {}
+	public ReferenceTest() {}
 
 	public static void main(String[] args) {
 		//Java的四個引用：強引用、軟引用、弱引用、虛引用

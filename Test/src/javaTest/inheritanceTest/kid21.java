@@ -1,4 +1,4 @@
-package javaInheritance;
+package javaTest.inheritanceTest;
 
 public class kid21 extends Kid02 {
 

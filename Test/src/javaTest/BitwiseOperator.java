@@ -1,8 +1,8 @@
-package javaBitwiseOperator;
+package javaTest;
 
-public class MainTest {
+public class BitwiseOperator {
 
-	public MainTest() {}
+	public BitwiseOperator() {}
 
 	public static void main(String[] args) {
 		//利用位元運算子，計算1的數量

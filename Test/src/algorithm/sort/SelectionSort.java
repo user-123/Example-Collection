@@ -18,7 +18,7 @@ public class SelectionSort {	//選擇排序(Selection Sort)
 		}
 		System.out.println(input);
 		System.out.println("=====測試開始=====");
-		SelectionSort.test(input);
+		test(input);
 		System.out.println("=====測試結束=====");
 		System.out.println(input);
 		System.out.println("=====執行結束=====");
@@ -27,7 +27,7 @@ public class SelectionSort {	//選擇排序(Selection Sort)
 	private static void test(int[] input) {
 		System.out.println("輸入：" + Arrays.toString(input));
 		long beginTime = System.currentTimeMillis();
-		SelectionSort.sort(input);
+		sort(input);
 		//var output = sort(input);
 		long endTime = System.currentTimeMillis();
 		System.out.println("輸出：" + Arrays.toString(input));

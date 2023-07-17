@@ -1,10 +1,10 @@
-package matrix;
+package javaTest;
 
 import java.util.Arrays;
 
-public class Main {
+public class MatrixTest {
 
-	public Main() {}
+	public MatrixTest() {}
 
 	public static void main(String[] args) {
 		//生成row*col matrix

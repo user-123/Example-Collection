@@ -18,7 +18,7 @@ public class BubbleSort {	//氣泡排序(Bubble Sort)
 		}
 		System.out.println(input);
 		System.out.println("=====測試開始=====");
-		BubbleSort.test(input);
+		test(input);
 		System.out.println("=====測試結束=====");
 		System.out.println(input);
 		System.out.println("=====執行結束=====");
@@ -27,7 +27,7 @@ public class BubbleSort {	//氣泡排序(Bubble Sort)
 	private static void test(int[] input) {
 		System.out.println("輸入：" + Arrays.toString(input));
 		long beginTime = System.currentTimeMillis();
-		BubbleSort.sort(input);
+		sort(input);
 		//var output = sort(input);
 		long endTime = System.currentTimeMillis();
 		System.out.println("輸出：" + Arrays.toString(input));
