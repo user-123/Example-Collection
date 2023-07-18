@@ -6,7 +6,7 @@ public class Solution {
 
 	public Solution() {}
 
-	//思路；必須至少遍歷一遍所有node
+	//思路：必須至少遍歷一遍所有node
 
 	public Node cloneGraph(Node node) {
 		//思路：BFS??DFS??，待確定@@
