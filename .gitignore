@@ -1,11 +1,30 @@
-##### Customization By D.C. #####
+########## Customization By D.C. ##########
 /LeetCode/src/*/Main.java
 !/LeetCode/src/lc000000_Template/Main.java
 /*/bin
 
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+ 
+# Eclipse
+.metadata/
+bin/
+
+##### switch to ignore itself #####
+.gitignore
 
 
 
+
+
+
+
+
+
+
+########## Generate by GitHub Java Project Automatically ##########
 
 # Compiled class file
 *.class
@@ -30,4 +49,43 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-replay_pid*
+
+
+
+
+
+########## Generate by Maven Project Automatically ##########
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
