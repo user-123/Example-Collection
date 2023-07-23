@@ -1,17 +1,12 @@
-package prepare;
+package prepare.tutorials.tenDaysOfStatistics.day0_MeanMedianAndMode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
-public class Day0_MeanMedianAndMode {
-
-	public Day0_MeanMedianAndMode() {}
+public class Solution {
 
 	public static void main(String[] args) {
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
 		//sum
 		int arrayLength, sum=0;
@@ -54,13 +49,12 @@ public class Day0_MeanMedianAndMode {
 			}
 		}
 
+		//輸出
 		//平均值(mean)
 		System.out.println((double)sum /arrayLength);
 		//中位數(median)
 		System.out.println(median);
 		//眾數(mode)
 		System.out.println(mode);
-
 	}
-
 }
