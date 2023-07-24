@@ -1,0 +1,38 @@
+public class QuickSortExample {
+	public static void main(String[] args) {
+		int[] arr = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
+
+		System.out.println("原始數組: " + Arrays.toString(arr));
+		quickSort(arr, 0, arr.length - 1);
+		System.out.println("排序後數組: " + Arrays.toString(arr));
+	}
+
+	public static void quickSort(int[] arr, int left, int right) {
+		if (left < right) {
+			int pivotIndex = partition(arr, left, right); // 獲取基準元素的索引
+			quickSort(arr, left, pivotIndex - 1); // 對基準元素的左半部分進行遞迴排序
+			quickSort(arr, pivotIndex + 1, right); // 對基準元素的右半部分進行遞迴排序
+		}
+	}
+
+	public static int partition(int[] arr, int left, int right) {
+		int pivot = arr[right]; // 使用最右邊的元素作為基準
+		int i = left - 1; // i 為小於基準的索引位置
+
+		for (int j = left; j < right; j++) {
+			if (arr[j] < pivot) {
+				i++;
+				swap(arr, i, j);
+			}
+		}
+
+		swap(arr, i + 1, right); // 將基準元素放在正確的位置上
+		return i + 1;
+	}
+
+	public static void swap(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+}
