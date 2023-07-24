@@ -16,11 +16,15 @@ public class QuickSort {	//快速排序(Quick Sort)
 		for(int i=0; i<quantity; i++) {
 			input[i]=(int) (Math.random()*(numsMaximum-numsMinimum+1)+numsMinimum);
 		}
+		// TODO
 		System.out.println(input);
 		System.out.println("=====測試開始=====");
 		test(input);
 		System.out.println("=====測試結束=====");
 		System.out.println(input);
+		System.out.println("=====確認開始=====");
+		// TODO
+		System.out.println("=====確認結束=====");
 		System.out.println("=====執行結束=====");
 	}
 
@@ -69,7 +73,7 @@ public class QuickSort {	//快速排序(Quick Sort)
 	private static void quickSortByIterative(int[] nums, int left, int right) {}
 
 	private static int partition(int[] nums, int start, int end) {
-		int left = start, right = end, pivot = (int) (Math.random()*nums.length);
+		int left = start, right = end, pivot = (int) (Math.random()*(right-left+1)+left);	//Math.random()*nums.length
 		int pivotValue = nums[pivot];
 
 		while(left<right) {
