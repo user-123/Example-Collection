@@ -5,6 +5,7 @@ public class Solution {
 	public Solution() {}
 
 	public int maxVowels(String s, int k) {
+		//思路：sliding window
 		int count=0, maxCount;
 		for(int i=0; i<k; i++) {
 			if(isVowel(s.charAt(i))) {count++;}
@@ -23,6 +24,7 @@ public class Solution {
 	}
 
 	public int maxVowels_2(String s, int k) {
+		//思路：前一個解法的優化，預先將string轉成char array
 		char[] sArray = s.toCharArray();
 		int count=0, maxCount;
 		for(int i=0; i<k; i++) {
@@ -38,6 +40,7 @@ public class Solution {
 	}
 
 	public int maxVowels2(String s, int k) {
+		//思路：前兩個解法的優化，將前一解法的判斷vowel拿掉，改為設計一個vowel array，每次計算直接相加或相減，而不必判斷
 		char[] sArray = s.toCharArray();
 		int[] isVowel = new int[128];
 		/*
