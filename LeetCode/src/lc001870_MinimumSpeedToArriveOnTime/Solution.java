@@ -33,7 +33,7 @@ public class Solution {
 	}
 
 	private boolean isPossibleSpeed2(int[] distances, double hour, int speed) {
-		//思路：前一個isPossibleSpeed的改寫，棄用Math.ceil()，改為更騷的操作；利用int會無條件捨去小數點的邏輯，改為計算(distances[i]+speed-1) /speed，如果distances[i]/speed整除，則speed-1/speed的部份會被捨去；如果distances[i]-1 ~ distances[i]+speed-2 /speed整除，則speed/speed的部份會使(distances[i]+speed-1) /speed增加1(因為Math.ceil((double)distances[i] /speed)==(int)distances[i]/speed +1)，也就是無條件進位的邏輯；舉個實例：(int)21~23/4=6
+		//思路：前一個isPossibleSpeed的改寫，棄用Math.ceil()，改為更騷的操作；利用int會無條件捨去小數點的邏輯，改為計算(distances[i]+speed-1) /speed，如果distances[i]/speed整除，則speed-1/speed的部份會被捨去；如果distances[i]-1 ~ distances[i]+speed-2 /speed整除，則speed/speed的部份會使(distances[i]+speed-1) /speed增加1(因為Math.ceil((double)distances[i] /speed)==(int)distances[i]/speed +1)，也就是無條件進位的邏輯；舉個實例：(int)20/4=5, (int)21~23/4=6, (int)24/4=6
 		int length=distances.length;
 		double time=0;
 		for(int i=0; i<length-1; i++) {
