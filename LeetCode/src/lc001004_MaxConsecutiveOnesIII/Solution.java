@@ -4,6 +4,8 @@ public class Solution {
 
 	public Solution() {}
 
+	//思路：與1493. Longest Subarray of 1's After Deleting One Element思路相同
+
 	public int longestOnes(int[] nums, int k) {
 		//思路：right持續往右走，當遇到0就翻轉並記錄數量，當zeroCount==k的時候，就代表length最長了，此時比較並做記錄，接著將right、left同時向右移動
 		int left=0, right, maxLength=0, zeroCount=0;
@@ -21,7 +23,7 @@ public class Solution {
 	public int longestOnes2(int[] nums, int k) {
 		//思路：因為要return的是"最大窗口大小"，所以只要維持left、right最大距離即可
 		int left=0, right;
-		for(right=0; right<nums.length; ++right) {
+		for(right=0; right<nums.length; right++) {
 			if(nums[right]==0) {k--;}
 			if(k<0 && nums[left++]==0) {k++;}
 		}
