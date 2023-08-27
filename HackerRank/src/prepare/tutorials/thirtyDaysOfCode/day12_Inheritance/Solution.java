@@ -10,7 +10,7 @@ public class Solution {
     	String firstName, lastName;
     	int idNumber, scoreQuantity;
     	int[] testScores;
-    	try (Scanner scanner = new Scanner(System.in)) {
+    	try(Scanner scanner = new Scanner(System.in)) {
             firstName=scanner.next();
             lastName=scanner.next();
             idNumber=scanner.nextInt();
