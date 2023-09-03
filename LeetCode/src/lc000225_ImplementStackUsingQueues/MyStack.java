@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class MyStack {
-	Queue<Integer> queue;
+	Queue<Integer> queue;	//, temp
 
 	public MyStack() {
 		queue = new LinkedList<>();
@@ -20,6 +20,14 @@ class MyStack {
 			temp.offer(iterator.next());
 		}
 		queue=temp;
+		/*
+		temp = new LinkedList<>();
+		temp.offer(x);
+		for(Iterator<Integer> iterator = queue.iterator(); iterator.hasNext();) {	//使用迭代器進行"LinkedList"的遍歷，效能不確定跟純poll()比起來是否有比較高????
+			temp.offer(iterator.next());
+		}
+		queue=temp;
+		*/
 	}
 
 	public int pop() {
