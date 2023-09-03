@@ -5,6 +5,7 @@ public class Solution {
 	public Solution() {}
 
 	public ListNode partition(ListNode head, int x) {
+		//思路：
 		ListNode lesser = new ListNode(Integer.MIN_VALUE), lesserTail=lesser, equalOrGreater = new ListNode(Integer.MAX_VALUE), equalOrGreaterTail=equalOrGreater;
 		while(head!=null) {
 			if(head.val<x) {
