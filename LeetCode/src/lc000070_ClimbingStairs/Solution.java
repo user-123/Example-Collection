@@ -52,15 +52,15 @@ public class Solution {
 
 	public int climbStairs4(int n) {
 		//公式解，呵呵~
-		return (int) (1/Math.pow(5, 0.5)*(Math.pow((1+Math.sqrt(5))/2, n+1)-Math.pow((1-Math.sqrt(5))/2, n+1)));
+		return (int)(1/Math.pow(5, 0.5)*(Math.pow((1+Math.sqrt(5))/2, n+1)-Math.pow((1-Math.sqrt(5))/2, n+1)));
 	}
 
 	public int climbStairs5(int n) {
-		//公式解好看化
+		//公式解，好看化
 		double pha = Math.pow(1+Math.sqrt(5), n+1);	//Math.sqrt(5) == Math.pow(5, 0.5)
 	    double phb = Math.pow(1-Math.sqrt(5), n+1);
 	    double div = Math.pow(2, n+1)*Math.sqrt(5);
-		return (int) ((pha-phb)/div);
+		return (int)((pha-phb)/div);
 	}
 
 	public int climbStairs6(int n) {
@@ -78,6 +78,7 @@ public class Solution {
 		//遞迴解+紀錄，待完成
 		if(n==1) {return 1;}
 		if(n==2) {return 2;}
+		//TODO
 		return climbStairs8(n-1)+climbStairs8(n-2);
 	}
 

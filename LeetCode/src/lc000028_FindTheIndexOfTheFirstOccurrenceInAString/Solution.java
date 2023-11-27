@@ -5,7 +5,17 @@ public class Solution {
 	public Solution() {}
 
 	public int strStr(String haystack, String needle) {
+		//思路：不要重複造輪子XDDDD
+		return haystack.indexOf(needle);
+	}
 
+	public int strStr_(String haystack, String needle) {
+		//思路：KMP algorithm(Knuth–Morris–Pratt algorithm，Knuth-Morris-Pratt字符串查找算法)
+		//LPS(Longest Prefix Suffix，最長相等前後綴)
+		if(needle.length()==0) {return 0;}
+		if(haystack.length()<needle.length()) {return -1;}
+
+		//TODO
 		return -1;
 	}
 
